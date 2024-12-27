@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Sample Product",
+    "price": 19.99,
+    "description": "A great product for testing.",
+    "category": "electronics",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "title": "Premium Laptop",
+    "price": 1299.99,
+    "description": "A high-performance laptop for professionals.",
+    "category": "electronics",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "title": "Comfortable Chair",
+    "price": 89.99,
+    "description": "A comfortable office chair for daily use.",
+    "category": "furniture",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "title": "",
+    "price": 49.99,
+    "description": "Missing title scenario for testing validation.",
+    "category": "home",
+    "image": "https://via.placeholder.com/100"
+  },
+  {
+    "title": "Invalid Price Product",
+    "price": -10,
+    "description": "Testing invalid price handling.",
+    "category": "fashion",
+    "image": "https://via.placeholder.com/120"
+  },
+  {
+    "title": "High-End Phone",
+    "price": 899.99,
+    "description": "A flagship smartphone with cutting-edge features.",
+    "category": "electronics",
+    "image": ""
+  },
+  {
+    "title": "Casual T-shirt",
+    "price": 19.99,
+    "description": "A comfortable cotton t-shirt for casual wear.",
+    "category": "clothing",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "title": "Empty Product",
+    "price": 0,
+    "description": "",
+    "category": "",
+    "image": ""
+  }
+]
