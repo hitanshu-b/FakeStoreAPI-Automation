@@ -74,4 +74,27 @@ public class ProductTest {
 
         Assert.assertTrue(isPriceValid, "Expected Price:"+ expectedPrice + "Actual Price:" + actualPrice);
     }
+
+    @Test
+    public void testDeleteProduct(){
+        int productId = 3;
+        Response response = CommonFunctions.getRequestSpecification()
+                .pathParam("id",productId)
+                .delete(APIConstants.DELETE_PRODUCT);
+        assertions.assertStatusCode(response,200);
+//        assertions.assertResponseField(response,"message","null");
+
+        String message = response.jsonPath().getString("message");
+        if(message != null){
+            Assert.assertEquals(message,"null","null");
+        }else{
+            System.out.println("Message is null in the response");
+        }
+
+        Response getResponse = CommonFunctions.getRequestSpecification()
+                .pathParam("id",productId)
+                .get(APIConstants.GET_PRODUCTS_ID);
+        assertions.assertStatusCode(getResponse,404);
+
+    }
 }
